@@ -17,12 +17,11 @@ jorge = turtle.Turtle()
 jorge.color("yellow")
 jorge.pensize(3)
 
-tess.forward(80)
-
+tess.forward(90)
 tess.left(120)
-tess.forward(80)
+tess.forward(90)
 tess.left(120)
-tess.forward(80)
+tess.forward(90)
 tess.left(120) # Complete the triangle
 
 # Draw square
@@ -39,5 +38,5 @@ alex.left(90)
 # Draw circle
 # jorge.circle(50)
 for i in range(100):
-  jorge.circle(10+i, 45)
+  jorge.circle(5+i, 10)
 #window.mainloop()
