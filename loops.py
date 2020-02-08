@@ -19,9 +19,6 @@ for i in [0, 1, 2, 3]:
 	alex.forward(50)
 	alex.left(90)
 
-tess = turtle.Turtle()
-tess.color("lightgreen")
-tess.pensize(5)
 
 colors = ["yellow", "red", "purple", "blue", "hotpink", "orange"]
 
@@ -34,3 +31,19 @@ for color in colors:
   alex.pendown()
   alex.forward(50)
   alex.left(90)
+
+window.bgcolor("lightgreen")
+tess = turtle.Turtle()
+tess.color("SlateBlue")
+tess.pensize(5)
+
+tess.penup()
+size = 20
+
+for _ in range(30):
+	tess.stamp()
+
+	size = size + 3
+
+	tess.forward(size)
+	tess.right(24)
