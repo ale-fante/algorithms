@@ -47,3 +47,36 @@ for _ in range(30):
 
 	tess.forward(size)
 	tess.right(24)
+
+
+n = 6
+
+current_sum = 0
+for i in range(n+1):
+
+	current_sum += i
+
+print(current_sum)
+
+print("COLLATZ 3n + 1 Sequence:")
+
+# collatz 3n + 1 sequence
+''' The "computational rule" for creating the sequence is to start from
+some given n, and to generate the next term of the sequnce from n, either by
+halving n, (whenever n is even), or else by multiplying it by three and adding 1. 
+The sequencee terminates wheen n reaches 1 '''
+n = 102
+
+# until n is equal to 1
+while n != 1:
+	# do this:
+	print(n)
+	# if th number is even, divide it into 2
+	if n % 2 == 0:
+		n = n // 2
+	# if the number is not even, multiply by thre and add one
+	else:
+		n = n * 3 + 1
+
+print(n)
+
