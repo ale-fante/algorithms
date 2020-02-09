@@ -25,4 +25,4 @@ while n > 0:
 	n = n // 10
 	print("Numbers left on the string: " + str(n))
 
-print(/n + "How many zeros of fives are in the sequence? " + str(count))
+print("How many zeros of fives are in the sequence? " + str(count))
