@@ -28,23 +28,25 @@ import random
 
 def getAnswer(answerNumber):
 	responses =  {
-		1: "It is certain",
-		2: "It is decidedly so",
-		3: "Most definitely yes",
-		4: "Reply hazy, try again",
-		5: "As again later",
-		6: "Concentrate and ask again",
-		7: "My response is no",
-		8: "Outlook not so good",
-		9: "Very doubtful"
+		1 : "It is certain",
+		2 : "It is decidedly so",
+		3 : "Most definitely yes",
+		4 : "Reply hazy, try again",
+		5 : "As again later",
+		6 : "Concentrate and ask again",
+		7 : "My response is no",
+		8 : "Outlook not so good",
+		9 : "Very doubtful"
 	}
 
-	for k, v in responses.iteritems():
-		r = random.randint(1, 9)
-		chosen_value = r, v
-	return chosen_value
+	if answerNumber in responses:
+		print(responses[answerNumber])
 
-getAnswer(1)
+response = random.randint(1, 9)
+fortune = getAnswer(response)
+getAnswer(fortune)
+
+
 
 
 
