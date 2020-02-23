@@ -33,3 +33,11 @@ print(word[:3])
 # Omit the first three and print the rest
 print(word[3:])
 
+
+# Strings are not mutable. Slice!
+
+greeting = "Hello, world!"
+new_greeting = "Y" + greeting[1:]
+print(new_greeting)
+
+
