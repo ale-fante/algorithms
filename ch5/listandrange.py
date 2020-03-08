@@ -29,5 +29,46 @@ def f(n):
 			return i
 
 print(f(12))
-print(f(200))
+print(f(1000000))
+# Once the condition is met, no further elements are generated on "range.()" withing python3
+
+"""
+YMMV - Your Mileage may vary
+"""
+
+#Create lazy promise
+print(range(10))
+#Call in the promise to produce a list
+print(list(range(10)))
+
+
+import random
+
+joe = random.Random()
+
+def sum1():
+	""" Build a list of random numbers, then sum them """
+	xs = []
+	for i in range(100000):
+		num = joe.randrange(1000)
+		xs.append(num)
+
+	tot = sum(xs)
+	return tot
+
+print(sum1())
+
+
+def sum2():
+	""" Sum the random numbers as we generate them """
+	tot = 0
+	for i in range(100000):
+		num = joe.randrange(1000)
+		tot += num
+	return tot
+
+print(sum2())
+
+
+
 
