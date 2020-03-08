@@ -17,3 +17,10 @@ print(elem_two)
 mx = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(mx[0])
 print(mx[1][2])
+
+# Object = a thing to which a variable can refer. 
+
+# Step size = The interval between succssive elements of a linear sequence.
+# The third, and optional argumeent to the range function is called the step size.
+# If not specified, it defaults to 1.
+
