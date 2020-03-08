@@ -40,6 +40,10 @@ print(b)
 this = ["I", "am", "not", "a", "crook"]
 that = ["I", "am", "not", "a", "crook"]
 
+print("Test -1: {0}".format(that is this))
+this = that
+print("Test 0: {0}".format(that is this))
+
 # Returns False
 print("Test 1: {0}".format(this is that))
 print(this)
