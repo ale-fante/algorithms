@@ -18,3 +18,15 @@ def scalar_mult(scalar, vector):
 	return scalar_result
 
 print(scalar_mult(5, [1, 2]))
+
+def dot_product(vec1, vec2):
+	sum_of_prod = []
+	for i in range(len(vec1)):
+		prod_vec = vec1[i] * vec2[i]
+		sum_of_prod.append(prod_vec)
+
+	return sum(sum_of_prod)
+
+print(dot_product([1, 2], [1, 4]))
+print(dot_product([1, 1], [1, 1]))
+print(dot_product([1, 2, 1], [1, 4, 3]))
